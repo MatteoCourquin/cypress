@@ -1,40 +1,38 @@
 <template>
-<div>
-  <div class="background">
-    <div class="shape"></div>
-    <div class="shape"></div>
-  </div>
-  <form>
-    <h3>Login Here</h3>
-
-    <label for="username">Username</label>
-    <input type="text" placeholder="Email or Phone" id="username">
-
-    <label for="password">Password</label>
-    <input type="password" placeholder="Password" id="password">
-
-    <button>Log In</button>
-    <div class="social">
-      <div class="go"><i class="fab fa-google"></i> Google</div>
-      <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
-    </div>
-  </form>
   <div>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <form>
+      <h3>Login Here</h3>
+
+      <label for="username">Username</label>
+      <input type="text" placeholder="Email or Phone" id="username" />
+
+      <label for="password">Password</label>
+      <input type="password" placeholder="Password" id="password" />
+
+      <button id="login">Log In</button>
+      <div class="social">
+        <div class="go"><i class="fab fa-google"></i> Google</div>
+        <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
+      </div>
+    </form>
+  </div>
 </template>
 
 <script>
-
 export default {
-  name: '',
+  name: "",
   data() {
     return {};
   },
-  methods: {}
-}
-
+  methods: {},
+};
 </script>
 
-<style scoped lang='scss'>
+<style scoped lang="scss">
 *,
 *:before,
 *:after {
@@ -64,16 +62,13 @@ body {
 }
 
 .shape:first-child {
-  background: linear-gradient(#1845ad,
-      #23a2f6);
+  background: linear-gradient(#1845ad, #23a2f6);
   left: -80px;
   top: -80px;
 }
 
 .shape:last-child {
-  background: linear-gradient(to right,
-      #ff512f,
-      #f09819);
+  background: linear-gradient(to right, #ff512f, #f09819);
   right: -30px;
   bottom: -80px;
 }
@@ -94,7 +89,7 @@ form {
 }
 
 form * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
   letter-spacing: 0.5px;
   outline: none;
