@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="background">
     <div class="shape"></div>
     <div class="shape"></div>
@@ -18,6 +19,7 @@
       <div class="fb"><i class="fab fa-facebook"></i> Facebook</div>
     </div>
   </form>
+  <div>
 </template>
 
 <script>
